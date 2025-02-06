@@ -30,14 +30,14 @@ vim.keymap.set("v", "<leader>ae", "<cmd>CopilotChatExplain<CR>", { desc = "Expla
 ----- Harpoon -----
 vim.keymap.set("n", "<leader>ha", "<cmd>lua require('harpoon.mark').add_file()<CR>", { desc = "Add File" })
 vim.keymap.set("n", "<C-l>", "<cmd>lua require('harpoon.ui').toggle_quick_menu()<CR>", { desc = "List" })
-vim.keymap.set("n", "<C-n>", "<cmd>lua require('harpoon.ui').nav_file(1)<CR>", { desc = "File 1" })
-vim.keymap.set("n", "<C-t>", "<cmd>lua require('harpoon.ui').nav_file(2)<CR>", { desc = "File 2" })
-vim.keymap.set("n", "<C-w>", "<cmd>lua require('harpoon.ui').nav_file(3)<CR>", { desc = "File 3" })
-vim.keymap.set("n", "<C-f>", "<cmd>lua require('harpoon.ui').nav_file(4)<CR>", { desc = "File 4" })
-vim.keymap.set("n", "<leader>hn", "<cmd>lua require('harpoon.ui').nav_file(1)<CR>")
-vim.keymap.set("n", "<leader>ht", "<cmd>lua require('harpoon.ui').nav_file(2)<CR>")
-vim.keymap.set("n", "<leader>hw", "<cmd>lua require('harpoon.ui').nav_file(3)<CR>")
-vim.keymap.set("n", "<leader>hf", "<cmd>lua require('harpoon.ui').nav_file(4)<CR>")
+vim.keymap.set("n", "<C-n>", "<cmd>lua require('harpoon.ui').nav_file(1)<CR>")
+vim.keymap.set("n", "<C-t>", "<cmd>lua require('harpoon.ui').nav_file(2)<CR>")
+vim.keymap.set("n", "<C-w>", "<cmd>lua require('harpoon.ui').nav_file(3)<CR>")
+vim.keymap.set("n", "<C-f>", "<cmd>lua require('harpoon.ui').nav_file(4)<CR>")
+vim.keymap.set("n", "<leader>hn", "<cmd>lua require('harpoon.ui').nav_file(1)<CR>", { desc = "File 1" })
+vim.keymap.set("n", "<leader>ht", "<cmd>lua require('harpoon.ui').nav_file(2)<CR>", { desc = "File 2" })
+vim.keymap.set("n", "<leader>hw", "<cmd>lua require('harpoon.ui').nav_file(3)<CR>", { desc = "File 3" })
+vim.keymap.set("n", "<leader>hf", "<cmd>lua require('harpoon.ui').nav_file(4)<CR>", { desc = "File 4" })
 
 ----- Tmux Navigation ------
 local nvim_tmux_nav = require("nvim-tmux-navigation")
@@ -46,3 +46,10 @@ vim.keymap.set("n", "<C-h>", nvim_tmux_nav.NvimTmuxNavigateLeft) -- Navigate to 
 vim.keymap.set("n", "<C-j>", nvim_tmux_nav.NvimTmuxNavigateDown) -- Navigate to the bottom pane
 vim.keymap.set("n", "<C-k>", nvim_tmux_nav.NvimTmuxNavigateUp) -- Navigate to the top pane
 vim.keymap.set("n", "<C-l>", nvim_tmux_nav.NvimTmuxNavigateRight) -- Navigate to the right pane
+
+----- Copilot -----
+vim.keymap.set("i", "<C-s>", 'copilot#Accept("\\<CR>")', {
+  expr = true,
+  replace_keycodes = false,
+})
+vim.g.copilot_no_tab_map = true
