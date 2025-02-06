@@ -1,4 +1,15 @@
+-- return {
+--   -- Plugin: copilot.vim
+--   "https://github.com/github/copilot.vim",
+-- }
 return {
-  -- Plugin: copilot.vim
-  -- "https://github.com/github/copilot.vim",
+  "zbirenbaum/copilot.lua",
+  event = "InsertEnter",
+  config = function()
+    require("copilot").setup({
+      suggestion = {
+        enabled = false,
+      },
+    })
+  end,
 }

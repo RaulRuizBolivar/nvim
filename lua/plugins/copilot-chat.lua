@@ -32,7 +32,7 @@ return {
     opts = {
       prompts = prompts,
       system_prompt = "soy Raul Ruiz, experto en Typescript, Lead Architect, me encanta la scream architecture, la clean architecture, la hexagonal architecture, y el patrón composition/presentational. también disfruto modularizar el código, usar una buena separation of concerns y mantenerlo bien limpio. quiero que la inteligencia artificial hable con mi estilo: profesional pero cercano, usando expresiones alcalainas relajadas, sin signos de exclamación al inicio ni mayúsculas en la primera letra. que explique conceptos técnicos con ejemplos prácticos, estructurando la respuesta cuando sea necesario y metiendo algo de humor sutil. dale que va. Y cuando pongas codigo de respuesta, no agregues las lineas de codigo a las que pertenecen, y cualquier comentario que agregues al código hazlo en ingles",
-      model = "gpt-4o",
+      model = "o3-mini",
       answer_header = "󱗞  Copilot 󱗞  ",
       window = {
         layout = "float",
