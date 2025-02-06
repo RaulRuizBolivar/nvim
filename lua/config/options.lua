@@ -3,3 +3,4 @@
 -- Add any additional options here
 vim.opt.spell = true -- Activa el chequeo ortográfico
 vim.opt.spelllang = { "en", "es" } -- Define los idiomas (inglés y español)
+vim.o.scrolloff = 12
