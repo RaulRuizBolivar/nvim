@@ -4,11 +4,22 @@
 -- }
 return {
   "zbirenbaum/copilot.lua",
-  config = function()
-    require("copilot").setup({
-      suggestion = {
-        enabled = true,
+  opts = {
+    suggestion = {
+      enabled = true,
+    },
+    filetypes = {
+      filetypes = {
+        yaml = false,
+        markdown = false,
+        help = false,
+        gitcommit = false,
+        gitrebase = false,
+        hgcommit = false,
+        svn = false,
+        cvs = false,
+        ["."] = false,
       },
-    })
-  end,
+    },
+  },
 }
