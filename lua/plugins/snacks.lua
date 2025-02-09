@@ -11,14 +11,6 @@ return {
         { icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 2 },
         { icon = " ", title = "Projects", section = "projects", indent = 2, padding = 2 },
         { section = "startup" },
-        {
-          section = "terminal",
-          cmd = "pokemon-colorscripts --name charizard --shiny --no-title; sleep .1",
-          random = 10,
-          pane = 2,
-          indent = 4,
-          height = 60,
-        },
       },
       preset = {
         header = [[
