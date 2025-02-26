@@ -17,5 +17,22 @@ return {
       right_pad = 1,
       highlight = "render-markdownBullet",
     },
+    checkbox = {
+      enabled = true,
+      unchecked = {
+        icon = "󰄱 ",
+        highlight = "RenderMarkdownUnchecked",
+        scope_highlight = nil,
+      },
+      checked = {
+        icon = "󰱒 ",
+        highlight = "RenderMarkdownChecked",
+        scope_highlight = nil,
+      },
+      custom = {
+        todo = { raw = "[-]", rendered = "󰥔 ", highlight = "RenderMarkdownTodo", scope_highlight = nil },
+      },
+    },
+    indent = { enabled = true, skip_level = 0 },
   },
 }

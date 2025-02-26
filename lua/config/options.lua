@@ -4,3 +4,5 @@
 vim.opt.spell = true -- Activa el chequeo ortográfico
 vim.opt.spelllang = { "en", "es" } -- Define los idiomas (inglés y español)
 vim.o.scrolloff = 16
+vim.opt.number = true
+vim.opt.relativenumber = false
